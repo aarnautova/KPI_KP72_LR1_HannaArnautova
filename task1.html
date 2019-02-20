@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="Lab1_task2" />
+    <meta name="keywords" content="HTML, epam, KPI, Lab" />
+    <meta name="author" content="Hanna Arnautova" />
+    <title>Task 1: New html tags</title>
+  </head>
+  <body>
+    <main>
+      <article>
+        <header>
+          <h1>Most <mark>important</mark> heading here</h1>
+          <h3>Less important heading here</h3>
+          <p>Some additional information here</p>
+        </header>
+        <p>Lorem Ipsum dolor set amet....</p>
+        <footer>
+          <p>Posted by: Hege Refsnes</p>
+          <p>
+            Contact information:
+            <a href="mailto:someone@example.com"> someone@example.com</a>.
+          </p>
+        </footer>
+      </article>
+      <aside>
+        <h4>Epcot Center</h4>
+        <p>The Epcot Center is a theme park in Disney World, Florida.</p>
+      </aside>
+
+      <audio controls="controls"><source src="Run-sound-effect.mp3" /></audio>
+
+      <ul>
+        <li>User <bdi>hrefs</bdi>: 60 points</li>
+        <li>User <bdi>jdoe</bdi>: 80 points</li>
+        <li>User <bdi>إيان</bdi>: 90 points</li>
+      </ul>
+
+      <input list="browsers" />
+
+      <datalist id="browsers">
+        <option value="Internet Explorer"> </option>
+        <option value="Firefox"> </option>
+        <option value="Chrome"> </option>
+        <option value="Opera"> </option>
+        <option value="Safari"> </option>
+      </datalist>
+
+      <details>
+        <summary>Copyright 1999-2018.</summary>
+        <p>- by Refsnes Data. All Rights Reserved.</p>
+        <p>
+          All content and graphics on this web site are the property of the
+          company Refsnes Data.
+        </p>
+      </details>
+
+      <figure>
+        <img src="pic_trulli.jpg" alt="Trulli" style="width:100%" />
+        <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+      </figure>
+
+      <meter value="2" min="0" max="10">2 out of 10</meter><br />
+      <meter value="0.6">60%</meter>
+
+      <nav>
+        <a href="/html/">HTML</a> | <a href="/css/">CSS</a> |
+        <a href="/js/">JavaScript</a> | <a href="/jquery/">jQuery</a>
+      </nav>
+
+      <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+        0 <input type="range" id="a" value="50" />100 +<input
+          type="number"
+          id="b"
+          value="50"
+        />
+        =<output name="x" for="a b"></output>
+      </form>
+    </main>
+  </body>
+</html>
