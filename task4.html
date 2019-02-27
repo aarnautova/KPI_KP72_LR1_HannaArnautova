@@ -11,8 +11,10 @@
   </head>
   <body>
     <hr />
-    First name: <input type="text" name="firstname" /> <br />
-    Last name: <input type="text" name="lastname" />
+    <label for="firstname"> First name: </label>
+    <input type="text" name="firstname" /> <br />
+    <label for="firstname"> Last name: </label>
+    <input type="text" name="lastname" />
     <hr />
     <button name="button tag">Button tag</button>
     <input type="button" value="Input tag button type" />
@@ -22,11 +24,15 @@
       <option value="ukraine">Ukraine</option>
     </select>
     <hr />
-    <input type="radio" name="gender" value="male" /> Male<br />
-    <input type="radio" name="gender" value="female" /> Female
+    <input type="radio" name="gender" value="male" id="male" />
+    <label for="male">Male</label><br />
+    <input type="radio" name="gender" value="female" id="female" />
+    <label for="female"> Female</label>
     <hr />
-    <input type="checkbox" name="bike" value="bike" /> I have a bike <br />
-    <input type="checkbox" name="car" value="car" /> I have a car
+    <input type="checkbox" name="bike" value="bike" id="bike" />
+    <label for="bike"> I have a bike </label><br />
+    <input type="checkbox" name="car" value="car" id="car" />
+    <label for="car"> I have a car</label>
     <hr />
   </body>
 </html>

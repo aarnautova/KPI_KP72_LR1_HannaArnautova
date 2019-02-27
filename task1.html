@@ -7,78 +7,184 @@
     <meta name="description" content="Lab1_task2" />
     <meta name="keywords" content="HTML, epam, KPI, Lab" />
     <meta name="author" content="Hanna Arnautova" />
+    <style>
+      img {
+        width: 10%;
+      }
+    </style>
     <title>Task 1: New html tags</title>
   </head>
   <body>
     <main>
+      <p>Lab finished at <time datetime="2019-02-27 19:00">thursday</time>.</p>
+      <nav>
+        <a href="./task2.html">Task 2</a> | <a href="./task3.html">Task 3</a> |
+        <a href="./task4.html">Task 4</a> | <a href="./task5.html">Task 5</a>
+      </nav>
+      <wbr />
+      <hr />
       <article>
         <header>
-          <h1>Most <mark>important</mark> heading here</h1>
-          <h3>Less important heading here</h3>
-          <p>Some additional information here</p>
+          <h1>There is nothing permanent except <mark>change</mark></h1>
+          <h2>Learning never exhausts the mind</h2>
         </header>
-        <p>Lorem Ipsum dolor set amet....</p>
+        <p>Learning never exhausts the mind</p>
         <footer>
-          <p>Posted by: Hege Refsnes</p>
           <p>
-            Contact information:
-            <a href="mailto:someone@example.com"> someone@example.com</a>.
+            Text was taken from:
+            <a href="https://www.brainyquote.com">brainyquote.com</a>.
           </p>
         </footer>
       </article>
+      <hr />
       <aside>
-        <h4>Epcot Center</h4>
-        <p>The Epcot Center is a theme park in Disney World, Florida.</p>
+        <details>
+          <summary>C# (pronounced C sharp)</summary>
+          <p>
+            a general-purpose, multi-paradigm programming language encompassing
+            strong typing, lexically scoped, imperative, declarative,
+            functional, generic, object-oriented (class-based), and
+            component-oriented programming disciplines
+          </p>
+        </details>
       </aside>
-
-      <audio controls="controls"><source src="Run-sound-effect.mp3" /></audio>
-
+      <hr />
+      <section>
+        <h3>Section demo</h3>
+        <p>Section details, text, etc.</p>
+      </section>
+      <hr />
       <ul>
-        <li>User <bdi>hrefs</bdi>: 60 points</li>
-        <li>User <bdi>jdoe</bdi>: 80 points</li>
-        <li>User <bdi>إيان</bdi>: 90 points</li>
+        <li>Without bdi tag إيان 12</li>
+        <li>With bdi tag <bdi>إيان</bdi> 12</li>
       </ul>
-
-      <input list="browsers" />
-
-      <datalist id="browsers">
-        <option value="Internet Explorer"> </option>
-        <option value="Firefox"> </option>
-        <option value="Chrome"> </option>
-        <option value="Opera"> </option>
-        <option value="Safari"> </option>
+      <hr />
+      <input list="languages" />
+      <datalist id="languages">
+        <option value="C#"> </option>
+        <option value="C++"> </option>
+        <option value="C"> </option>
+        <option value="Java"> </option>
+        <option value="Javascript"> </option>
       </datalist>
-
-      <details>
-        <summary>Copyright 1999-2018.</summary>
-        <p>- by Refsnes Data. All Rights Reserved.</p>
-        <p>
-          All content and graphics on this web site are the property of the
-          company Refsnes Data.
-        </p>
-      </details>
-
+      <hr />
       <figure>
-        <img src="pic_trulli.jpg" alt="Trulli" style="width:100%" />
-        <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+        <img
+          src="https://res.cloudinary.com/dxnhepkjy/image/upload/v1551291340/large.png"
+          alt="Imagine dragons quote"
+        />
+        <figcaption>Img.1 - Thunder, Imagine Dragons.</figcaption>
       </figure>
-
-      <meter value="2" min="0" max="10">2 out of 10</meter><br />
-      <meter value="0.6">60%</meter>
-
-      <nav>
-        <a href="/html/">HTML</a> | <a href="/css/">CSS</a> |
-        <a href="/js/">JavaScript</a> | <a href="/jquery/">jQuery</a>
-      </nav>
+      <hr />
+      <meter value="5" min="0" max="10">5 out of 10</meter>
+      <br />
+      <progress value="22" max="100"></progress>
+      <hr />
 
       <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
-        0 <input type="range" id="a" value="50" />100 +<input
-          type="number"
-          id="b"
-          value="50"
-        />
-        =<output name="x" for="a b"></output>
+        <input type="number" id="a" value="50" /> +
+        <input type="number" id="b" value="50" />
+        = <output name="x" for="a b"></output>
       </form>
+      <hr />
+
+      <audio controls>
+        <source
+          src="https://res.cloudinary.com/dxnhepkjy/video/upload/v1551289650/Run-sound-effect.mp3"
+        />
+      </audio>
+      <hr />
+      <canvas id="canvasExample"></canvas>
+      <script>
+        var canvas = document.getElementById("canvasExample");
+        var ctx = canvas.getContext("2d");
+        ctx.fillStyle = "#FF0000";
+        ctx.fillRect(80, 0, 80, 80);
+      </script>
+      <hr />
+      <embed src="https://www.youtube.com/embed/t99KH0TR-J4" />
+      <hr />
+      <picture>
+        <source
+          media="(min-width: 465px)"
+          srcset="https://res.cloudinary.com/dxnhepkjy/image/upload/v1551292864/25038963_763575500508391_9221983422388371456_n.jpg"
+          alt="Quote 1"
+        />
+        <img
+          src="https://res.cloudinary.com/dxnhepkjy/image/upload/v1551293122/369f93d5e3a70b91131db03179d77c93.jpg"
+          alt="Quote 2"
+        />
+      </picture>
+      <hr />
+      <button onclick="showContent()">Show content</button>
+
+      <template>
+        <h4>Witcher</h4>
+        <img
+          src="https://res.cloudinary.com/dxnhepkjy/image/upload/v1551293716/20.png"
+        />
+      </template>
+      <script>
+        function showContent() {
+          var temp = document.getElementsByTagName("template")[0];
+          var clon = temp.content.cloneNode(true);
+          document.body.appendChild(clon);
+        }
+      </script>
+      <hr />
+      <video controls>
+        <source src="http://vjs.zencdn.net/v/oceans.mp4" />
+        <track
+          src="./sample.vtt"
+          kind="captions"
+          srclang="en"
+          label="English"
+        />
+      </video>
+      <hr />
+      <div contextmenu="menuItem">
+        <p>
+          Right-click ont this text to see the context menu!(Firefox only)
+        </p>
+        <menu type="context" id="menuItem">
+          <menuitem
+            label="Refresh"
+            onclick="window.location.reload();"
+          ></menuitem>
+          <menu label="Share on...">
+            <menuitem label="Twitter"></menuitem>
+            <menuitem label="Facebook"></menuitem>
+          </menu>
+        </menu>
+      </div>
+      <hr />
+      <dialog id="dialogExample">
+        <form method="dialog">
+          <section>
+            <h3>Dialog demo!</h3>
+            <p>Also, a section demo!</p>
+          </section>
+          <button id="cancel" type="reset">Cancel</button>
+          <button type="submit">Confirm</button>
+        </form>
+      </dialog>
+
+      <button id="show">Show dialog</button>
+
+      <script>
+        (function() {
+          var updateButton = document.getElementById("show");
+          var cancelButton = document.getElementById("cancel");
+          var dialogExample = document.getElementById("dialogExample");
+          updateButton.addEventListener("click", function() {
+            dialogExample.showModal();
+          });
+          cancelButton.addEventListener("click", function() {
+            dialogExample.close();
+          });
+        })();
+      </script>
+      <hr />
     </main>
   </body>
 </html>
